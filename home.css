@@ -1,0 +1,528 @@
+   /* @import 'style.css';   */
+
+.hero-section{
+    /* border: 1px solid red; */
+    height:calc(100vh - 200px); 
+   background-size: cover;
+   width: 100%;
+   background-image: url('header.png');
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.hero-section img{
+    margin-left:75px ;
+    /* border: 10px solid red; */
+
+
+}
+.hero-section .sub-heading{
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.product{
+    /* border: 1px solid red; */
+    height: 60vh;
+    width: 2000px;
+    /* background-color: aquamarine; */
+    padding: 20px 0;
+    overflow: hidden;
+   
+}
+
+.product-category{
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+.product-container{
+    padding: 0 10vw;
+     /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+     /* overflow-x: auto;  */
+      scroll-behavior:smooth;
+      overflow-x: hidden;  
+       
+}
+
+ /* .product-container{
+    -ms-overflow-style: none;
+}  */
+    .product-container::-webkit-scrollbar{
+    display: none;
+}    
+
+.product-card{
+    /* border: 1px solid green; */
+   width: 250px;
+   height: 450px;
+   margin-right: 40px;
+
+}
+.product-image{
+ /* border: 1px solid rebeccapurple;  */
+width: 260px;
+height:350px;
+position: relative;
+/* overflow: hidden; */
+
+
+display: flex;
+justify-content: space-between;
+}
+
+.product-thumb{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.discount-tag{
+position: absolute;
+background: #fff;
+padding: 5px;
+border-radius: 5px;
+color: #ff7d7d;
+ 
+
+}
+
+.card-btn{
+     position: relative; 
+    bottom: -290px;
+    left: -130px; 
+    padding: 10px;
+    width: 7000000vw;
+    height: 34px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    transform: translateX(-50%);
+    opacity: 0;
+    /* border: 1px solid red; */
+
+}
+
+.product-card:hover .card-btn{
+    opacity: 1;
+}
+
+.card-btn:hover{
+    background-color: #efefef;
+}
+.product-info{
+    width: 100%;
+    height: 100px;
+    padding-top:10px ;
+
+}
+
+.product-brand{
+    text-transform: uppercase;
+
+}
+.product-short-des{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+.price{
+    font-weight: 900;
+    font-size: 20px;
+    height: 20px;
+}
+.actual-price{
+    margin-left: 20px;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.pre-button, .nxt-button{
+    border: none;
+    width: 10vw;
+    height: 7%;
+    position: absolute;
+    top:120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+
+
+}
+.pre-button{
+    left: 0;
+    transform: rotate(180deg);
+}
+.nxt-button{
+    right: 0;
+}
+.pre-button img, .nxt-button img{
+    opacity: 0.2;
+
+}
+.pre-button:hover img, .nxt-button:hover img{
+    opacity: 1;
+}
+
+/* collections */
+
+.collection-container{
+width: 100%;
+display: grid;
+grid-template-columns: repeat(2, 1fr) ;
+grid-gap: 3px;
+}
+
+
+.collection{
+    position: relative;
+}
+.collection img{
+    width: 100%;
+    height: 100%;
+  object-fit: cover;
+}
+.collection p{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    text-transform: capitalize;
+    transform: translateX(-50%, -50%);
+}
+.collection:nth-child(3){
+    grid-column: span 2;
+    margin-bottom: 10px;
+}
+
+
+/*------ shirt-section---------*/
+
+.shirt-section{
+        /* border: 1px solid red; */
+        height: 80vh;
+        width: 2000px;
+        /* background-color: aquamarine; */
+        padding: 20px 0;
+        overflow: hidden;
+}
+
+.shirt-container{
+    padding: 0 10vw;
+    /* border: 1px solid red; */
+   display: flex;
+   justify-content: space-between;
+    /* overflow-x: auto;  */
+     scroll-behavior:smooth;
+     overflow-x: hidden;  
+}
+
+.shirt-container::-webkit-scrollbar{
+    display: none;
+}    
+.shirt-card{
+    /* border: 1px solid green; */
+   width: 250px;
+   height: 450px;
+   margin-right: 40px;
+
+}
+
+.shirt-image{
+    /* border: 1px solid rebeccapurple;  */
+   width: 260px;
+   height:350px;
+   position: relative;
+   /* overflow: hidden; */
+   
+   
+   display: flex;
+   justify-content: space-between;
+   }
+
+   .shirt-btn{
+    position: relative; 
+   bottom: -290px;
+   left: -130px; 
+   padding: 10px;
+   width: 7000000vw;
+   height: 34px;
+   text-transform: capitalize;
+   border: none;
+   outline: none;
+   background: #fff;
+   border-radius: 5px;
+   transition: 0.5s;
+   cursor: pointer;
+   transform: translateX(-50%);
+   opacity: 0;
+   /* border: 1px solid red; */
+
+}
+
+.shirt-card:hover .shirt-btn{
+   opacity: 1;
+}
+
+.shirt-btn:hover{
+   background-color: #efefef;
+}
+
+.shirt-info{
+    width: 100%;
+    height: 100px;
+    padding-top:10px ;
+
+}
+.shirt-thumb{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.pre-btn, .nxt-btn{
+    border: none;
+    width: 10vw;
+    height: 7%;
+    position: absolute;
+    top:390vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+
+
+}
+.pre-btn{
+    left: 0;
+    transform: rotate(180deg);
+}
+.nxt-btn{
+    right: 0;
+}
+.pre-btn img, .nxt-btn img{
+    opacity: 0.2;
+
+}
+.pre-btn:hover img, .nxt-btn:hover img{
+    opacity: 1;
+}
+
+
+ /*----- shoe-section ------- */
+
+
+.shoe-section{
+        /* border: 1px solid red; */
+        height: 80vh;
+        width: 2000px;
+        /* background-color: aquamarine; */
+        padding: 20px 0;
+        overflow: hidden;
+}
+
+.shoe-container{
+    padding: 0 10vw;
+    /* border: 1px solid red; */
+   display: flex;
+   justify-content: space-between;
+    /* overflow-x: auto;  */
+     scroll-behavior:smooth;
+     overflow-x: hidden;  
+}
+
+.shoe-container::-webkit-scrollbar{
+    display: none;
+}    
+.shoe-card{
+    /* border: 1px solid green; */
+   width: 250px;
+   height: 450px;
+   margin-right: 40px;
+   
+
+}
+
+.shoe-image{
+    /* border: 1px solid rebeccapurple;  */
+   width: 260px;
+   height:350px;
+   position: relative;
+   /* overflow: hidden; */
+   
+   
+   display: flex;
+   justify-content: space-between;
+   }
+
+   .shoe-btn{
+    position: relative; 
+   bottom: -290px;
+   left: -130px; 
+   padding: 10px;
+   width: 7000000vw;
+   height: 34px;
+   text-transform: capitalize;
+   border: none;
+   outline: none;
+   background: #fff;
+   border-radius: 5px;
+   transition: 0.5s;
+   cursor: pointer;
+   transform: translateX(-50%);
+   opacity: 0;
+   /* border: 1px solid red; */
+
+}
+
+.shoe-card:hover .shoe-btn{
+   opacity: 1;
+}
+
+.shoe-btn:hover{
+   background-color: #efefef;
+}
+
+.shoe-info{
+    width: 100%;
+    height: 100px;
+    padding-top:39px ;
+
+}
+.shoe-thumb{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.p-button, .n-button{  
+    width: 10vw;
+    height: 7%;
+    position: absolute;
+    top:470vh;
+     display: flex; 
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+   /* border: 1px solid red; */
+
+}
+.p-button{
+    left: 0;
+    transform: rotate(180deg);
+}
+.n-button{
+    right: 0;
+}
+.p-button img, .n-button img{
+    opacity: 0.2;
+
+}
+.p-button:hover img, .n-button:hover img{
+    opacity: 1;
+}
+
+.footer-ul-container{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+.category{
+    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    list-style: none;
+}
+.category-title{
+    grid-column: span 2;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.category .footer-link{
+    text-decoration: none;
+    color: rgba(151, 63, 63, 0.75);
+    text-transform: capitalize;
+}
+
+/* footer-section */
+.footer-link:hover{
+    color: #fff;
+}
+.footer-title, .info{
+    color: #efefef;
+    text-transform: capitalize;
+    margin: 50px 0;
+}
+.info{
+    margin: 19px;
+}
+
+.footer-social-container{
+ margin-top:-28px; 
+display: flex;
+justify-content: space-between;
+padding: 34px 23px;
+color: white;
+/* border: 1px solid goldenrod; */
+/* position:relative; */
+height: 100px;
+}
+.social-link{
+    color: #efefef;
+    text-decoration: none;
+  
+}
+.social-link:nth-child(1){
+    margin-left: 0 ;
+}
+.first-div{
+    display: flex; 
+     justify-content: space-between;
+    border: 1px solid rgb(156, 138, 138)(151, 150, 150)(151, 150, 150);
+    /* position:absolute; */
+    width: 300px;
+    
+
+}
+.second-div{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    /* position:absolute; */
+}
+.footer-credit{
+    width: 100%;
+    padding: 10px;
+    /* position: relative; */
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    color: #fff;
+    background-color: slategray;
+}

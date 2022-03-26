@@ -1,0 +1,13 @@
+footer{
+ position: relative;
+ width: 100%;
+ background: #383838;
+ padding: 40px 10vw;
+ padding-bottom: 80px;
+}
+
+.footer-content{
+display: flex;
+width: 100%;
+justify-content: space-between;
+}
